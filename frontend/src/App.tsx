@@ -1,13 +1,15 @@
 //imports
-import { Route,
-         RouterProvider,
-         createBrowserRouter,
-         createRoutesFromElements,
+import {
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
 } from 'react-router-dom'
 
 
 //layouts
 import RootLayout from './layouts/RootLayout'
+import UserLayout from './layouts/UserLayout'
 
 //pages
 
@@ -18,6 +20,10 @@ function App() {
     createRoutesFromElements(
       <Route path='/' element={<RootLayout />} >
 
+
+        <Route path='/user' element={<UserLayout />} >
+        
+        </Route>
       </Route>
     )
   )
